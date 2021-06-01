@@ -1,0 +1,29 @@
+Initial Project Setup:
+
+    Apache NiFi is an open source platform and gives developers the options to add their custom processor in the NiFi library. Follow these steps to create a custom processor.
+        Download Maven latest version from the link given below.
+        https://maven.apache.org/download.cgi
+        Add an environment variable named M2_HOME and set value as the installation directory of maven.
+        Download Eclipse IDE from the below link.
+        https://www.eclipse.org/downloads/download.php
+        Open command prompt and execute Maven Archetype command.
+    mvn archetype:generate
+        Search for the nifi type in the archetype projects.
+        Select org.apache.nifi:nifi-processor-bundle-archetype project.
+        Then from the list of versions select the latest version i.e. 1.7.1 for this tutorial.
+        Enter the groupId, artifactId, version, package, and artifactBaseName etc.
+        Then a maven project will be created having to directories.
+            nifi-<artifactBaseName>-processors
+            nifi-<artifactBaseName>-nar
+        Run the below command in nifi-<artifactBaseName>-processors directory to add the project in the eclipse.
+    mvn install eclipse:eclipse
+        Open eclipse and select import from the file menu.
+        Then select “Existing Projects into workspace” and add the project from nifi-<artifactBaseName>-processors directory in eclipse.
+        Add your code in public void onTrigger(ProcessContext context, ProcessSession session) function, which runs when ever a processor is scheduled to run.
+        Then package the code to a NAR file by running the below mentioned command.
+    mvn clean install
+        A NAR file will be created at nifi--nar/target directory.
+        Copy the NAR file to the lib folder of Apache NiFi and restart the NiFi.
+        After successful restart of NiFi, check the processor list for the new custom processor.
+        For any errors, check ./logs/nifi.log file.
+

@@ -1,0 +1,23 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+nifi-nats-nar
+
+
+From: 'an unknown organization'
+  - jnats (https://github.com/nats-io/nats.java) io.nats:jnats:jar:2.11.3
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - EdDSA-Java (https://github.com/str4d/ed25519-java) net.i2p.crypto:eddsa:bundle:0.3.0
+    License: CC0 1.0 Universal  (https://creativecommons.org/publicdomain/zero/1.0/)
+
+From: 'Apache NiFi Project' (http://nifi.apache.org/)
+  - nifi-nats-processors (http://nifi.apache.org/nifi-nar-bundles/nifi-nats/nifi-nats-processors) com.tyst:nifi-nats-processors:jar:1.0-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - nifi-utils (http://nifi.apache.org/nifi-commons/nifi-utils) org.apache.nifi:nifi-utils:jar:1.8.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+
