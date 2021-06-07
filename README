@@ -1,3 +1,5 @@
+Just a prototype intended to grab messages from nats and flow them into apache nifi
+
 Initial Project Setup:
 
     Apache NiFi is an open source platform and gives developers the options to add their custom processor in the NiFi library. Follow these steps to create a custom processor.
