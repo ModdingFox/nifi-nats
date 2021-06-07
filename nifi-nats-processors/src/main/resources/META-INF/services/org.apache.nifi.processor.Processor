@@ -13,3 +13,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 com.tyst.processors.nats.GetNats
+com.tyst.processors.nats.PullSubscribeJetStreamNats
+com.tyst.processors.nats.PutNats
